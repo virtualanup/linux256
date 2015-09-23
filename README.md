@@ -14,3 +14,14 @@ The runqemu.sh script will launch QEMU with the needed command-line options.
 With no arguments, it will boot the OpenWRT disk image with the default kernel
 residing on the image.  Alternatively, students can provide the pathname to
 their Linux kernel, and runqemu.sh will boot their kernel instead.
+
+Files in the floppy directory will appear on the floppy disk within the
+virtual machine.  To mount the floppy disk, use the command:
+
+o mount -t msdos /dev/fd0 /mnt
+
+The contents of floppy should appear in /mnt.
+
+Please note that the size of the files in floppy must remain less than the size
+of an actual floppy disk.
+
