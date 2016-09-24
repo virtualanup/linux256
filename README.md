@@ -39,7 +39,7 @@ residing on the image.  Alternatively, students can provide the pathname to
 their Linux kernel, and runqemu.sh will boot their kernel instead.  The kernel
 is in the file linux-3.18.42/arch/x86_64/boot/bzImage.
 
-# Importing files to QEMU virtual machine
+# Importing files into the QEMU virtual machine
 
 Files in the floppy directory will appear on the floppy disk within the
 virtual machine.  To mount the floppy disk, use the command:
