@@ -15,13 +15,13 @@ o The OpenWRT image that we use for our virtual machine is at http://www.cs.roch
 To compile the kernel, cd into the linux-3.18.42 directory.  Use the following
 commands the first time you build the kernel:
 
-o make mrproper
-o cp csc256.config .config
-o make bzImage
+	o make mrproper
+	o cp csc256.config .config
+	o make bzImage
 
 Subsequent kernel compiles can be done just by using:
 
-o make bzImage
+	o make bzImage
 
 The first kernel compile will take some time.  Subsequent kernel compiles will
 take less time as the kernel build system will only recompile files that have
@@ -44,7 +44,7 @@ is in the file linux-3.18.42/arch/x86_64/boot/bzImage.
 Files in the floppy directory will appear on the floppy disk within the
 virtual machine.  To mount the floppy disk, use the command:
 
-o mount -t msdos /dev/fd0 /mnt
+	o mount -t msdos /dev/fd0 /mnt
 
 The contents of floppy should appear in /mnt.
 
