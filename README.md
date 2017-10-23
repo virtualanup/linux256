@@ -39,7 +39,7 @@ The runqemu.sh script will launch QEMU with the needed command-line options.
 With no arguments, it will boot the OpenWRT disk image with the default kernel
 residing on the image.  Alternatively, students can provide the pathname to
 their Linux kernel, and runqemu.sh will boot their kernel instead.  The kernel
-is in the file linux-3.18.77/arch/x86_64/boot/bzImage.
+is in the file linux-3.18.77/arch/x86/boot/bzImage.
 
 # Importing files into the QEMU virtual machine
 
