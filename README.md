@@ -43,12 +43,14 @@ is in the file linux-3.18.77/arch/x86/boot/bzImage.
 
 # Importing files into the QEMU virtual machine
 
-Files in the floppy directory will appear on the floppy disk within the
-virtual machine.  To mount the floppy disk, use the command:
+Files in the floppy directory will appear as a hard disk within the
+virtual machine.  To mount the hard disk, use the command:
 
-o mount -t msdos /dev/fd0 /mnt
+o mount -t msdos /dev/sdb1 /mnt
 
-The contents of floppy should appear in /mnt.
+The contents of the directory floppy should appear in /mnt.
 
-Please note that the size of the files in floppy must remain less than the size
-of an actual floppy disk.
+Be sure to use the following command to unmount the hard disk device before
+shutting down the virtual machine:
+
+o unmount /mnt
